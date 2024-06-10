@@ -6,22 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a {
-            color: blue;
-            text-decoration: none;
-            padding-bottom: 3px;
-            border-bottom: blue 2px solid;
-
-        }
-
-        .item_reverse a {
-            color: blue;
-            text-decoration: none;
-            padding-bottom: 3px;
-            border-bottom: blue 2px solid;
-
-        }
-
         .head {
             background-color: #F7F8F9;
             text-align: center;
@@ -36,58 +20,51 @@
             padding: 50px 0;
         }
 
+        .item a img {
+            width: 18px;
+            margin-bottom: -4px;
+        }
+
+        .item_reverse a img {
+            width: 18px;
+            margin-bottom: -4px;
+        }
+
         .container .item {
             display: flex;
-            width: 60%;
-            padding-top: 80px;
-            margin: 20px auto;
-
-            justify-content: center;
-            text-align: left;
-
+            width: 60%;  
+            margin: 40px auto;
         }
 
-        .container .item_reverse {
+        .item_reverse {
             display: flex;
-            flex-direction: row-reverse;
             width: 60%;
-            margin: 5% auto;
+            margin:40px auto;
         }
 
-        .container .item_reverse .info {
-            width: 60%;
+        .item_reverse .info {
+            margin-left: 12%;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .a {
+            padding-bottom: 3px;
+            border-bottom: blue 2px solid;
         }
 
         .container img {
             width: 100%;
         }
 
-        .container .item_reverse .info h3 {
-            margin-left: 20%;
-        }
-
-        .container .item_reverse .info p {
-            margin-left: 20%;
-            width: 80%;
-        }
-
         .container .item ul {
             margin-bottom: 50px;
         }
 
-        .container .item_reverse ul {
-            margin-left: 20%;
-
-            margin-bottom: 50px;
-
-        }
-
-        .container .item_reverse a {
-            margin-left: 20%;
-        }
-
         .container p {
-
             width: 56%;
         }
 
@@ -100,7 +77,6 @@
             flex-wrap: wrap;
             width: 80%;
             padding-left: 20px;
-
         }
 
         .container ul li {
@@ -133,6 +109,7 @@
         .more-services_item {
             margin: 0 10px 30px;
         }
+
         .more-services svg {
             width: 130px;
         }
@@ -171,11 +148,11 @@
                         <li>開放 HTML／CSS 編輯</li>
                     </ul>
 
-                    <a href="">
-                        <span>看看開店祕技</span>
-                        <i></i>
-                    </a>
+                    <a href="" class="a">看看開店祕技</a>
+
+                    <a href="#"> <img src="arrow.png" alt=""> </a>
                 </div>
+
                 <div class="img">
                     <picture>
                         <img src="500x.webp" alt="圖片">
@@ -184,6 +161,11 @@
             </div>
 
             <div class="item_reverse">
+                <div class="img">
+                    <picture>
+                        <img src="500x_1.webp" alt="圖片">
+                    </picture>
+                </div>
                 <div class="info">
                     <h3 style="font-size: 30px;">支持海內外電商</br> 金流、物流一次搞定</h3>
                     <p style="line-height: 25px;">
@@ -198,16 +180,9 @@
                         <li>發票開立與串接</li>
                     </ul>
 
-                    <a href="">
-                        <span>了解更多金物流</span>
-                        <i></i>
-                    </a>
+                    <a href="" class="a"><span>了解更多金物流</span></a>
+                    <a href="#"> <img src="arrow.png" alt=""> </a>
 
-                </div>
-                <div class="img">
-                    <picture>
-                        <img src="500x_1.webp" alt="圖片">
-                    </picture>
                 </div>
             </div>
             <div class="item">
@@ -224,11 +199,8 @@
                         <li>自訂聊天機器人腳本</li>
                         <li>訊息整合中心</li>
                     </ul>
-                    <a href="">
-                        <span>看更多社群購物功能</span>
-                        <i></i>
-                    </a>
-
+                    <a href="" class="a">看更多社群購物功能</a>
+                    <a href="#"> <img src="arrow.png" alt=""> </a>
                 </div>
                 <div class="img">
                     <picture>
@@ -237,6 +209,11 @@
                 </div>
             </div>
             <div class="item_reverse">
+                <div class="img">
+                    <picture>
+                        <img src="500x_4.webp" alt="圖片">
+                    </picture>
+                </div>
                 <div class="info">
                     <h3 style="font-size: 30px;">刺激下單，創造回購</br> 行銷導流、促購模組任你玩</h3>
                     <p style="line-height: 25px;">
@@ -250,16 +227,8 @@
                         <li>會員分級／點數／購物金</li>
                         <li>FB／Google／LINE 廣告追蹤</li>
                     </ul>
-                    <a href="">
-                        <span>看更多優惠模組</span>
-                        <i></i>
-                    </a>
-
-                </div>
-                <div class="img">
-                    <picture>
-                        <img src="500x_4.webp" alt="圖片">
-                    </picture>
+                    <a href="" class="a">看更多優惠模組</a>
+                    <a href="#"> <img src="arrow.png" alt=""> </a>
                 </div>
             </div>
             <div class="item">
@@ -276,11 +245,8 @@
                         <li>門市快速集客工具</li>
                         <li>Smart OMO 會員導購工具</li>
                     </ul>
-                    <a href="">
-                        <span>了解更多全通路整合</span>
-                        <i></i>
-                    </a>
-
+                    <a href="" class="a">了解更多全通路整合</a>
+                    <a href="#"> <img src="arrow.png" alt=""> </a>
                 </div>
                 <div class="img">
                     <picture>
